@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.daniel.shoppinglist.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+
+        <TextView
+            android:id="@+id/moedaNacional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Moeda Nacional"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/moedaNacional"
+            android:layout_marginBottom="20dp"/>
+
+
+        <View
+            android:id="@+id/risco"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/spinner1"
+            android:background="#B71C1C"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/moedaInternacional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moeda Internacional"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/risco"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/moedaInternacional">
+
+        </Spinner>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonComecar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Começar"
+        android:onClick="enviarFormulario"/>
+
+</RelativeLayout>

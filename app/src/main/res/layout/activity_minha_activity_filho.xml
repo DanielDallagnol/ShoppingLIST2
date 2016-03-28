@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context="com.example.daniel.listview.MainActivity">
+
+
+
+    <LinearLayout
+        style="@style/Padding"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome Alimento"
+            android:configChanges="keyboardHidden"/>
+
+
+        <EditText
+            android:layout_weight="3"
+            android:id="@+id/edtPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0.00"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+
+    <Spinner
+        style="@style/Padding"
+        android:layout_weight="0"
+        android:id="@+id/spnOpcoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <LinearLayout
+        style="@style/Padding"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bntAdicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bntExcluir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excluir"/>
+
+    </LinearLayout>
+
+    <ListView
+        style="@style/Padding"
+        android:layout_weight="1"
+        android:id="@+id/lstDados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#B71C1C">
+
+        <TextView
+            android:id="@+id/textMoedaNacional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moeda Nacional: "
+            android:textColor="@android:color/background_light"/>
+        <TextView
+            android:id="@+id/textMoedaInternacional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moeda Internacional: "
+            android:textColor="@android:color/background_light"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

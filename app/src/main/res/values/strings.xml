@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shopping LIST</string>
+
+    <string-array name="money_names">
+        <item>Real</item>
+    </string-array>
+
+    <string-array name="money_names2">
+        <item>Dolar</item>
+        <item>Euro</item>
+    </string-array>
+    <string name="title_activity_minha_activity_filho">MinhaActivityFilho</string>
+</resources>
